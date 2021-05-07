@@ -1055,7 +1055,7 @@ main {
 }
 
 .breaker {
-  background: gray url(/assets/img/background__cars1.jpg);
+  background: gray url(../assets/img/background__cars1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
