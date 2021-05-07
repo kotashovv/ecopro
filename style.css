@@ -491,7 +491,7 @@ main {
 }
 
 .header__search form input[type=search] {
-  background: transparent url(../assets/img/icons/iconsearch.svg) no-repeat 9px center;
+  background: transparent url(../assets/img/icons/icon-search.png) no-repeat 9px center;
   border: none;
   padding: 10px;
   width: 55px;
