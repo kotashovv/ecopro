@@ -1,0 +1,45 @@
+// Основной шрифт на сайте с предзагрузкой
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Montserrat-Regular"),
+    url(../assets/fonts/Montserrat-Regular.eot),
+    url(../assets/fonts/Montserrat-Regular.woff2) format(woff2),
+}
+
+@font-face {
+    font-family: "Montserrat-light";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Montserrat-light"),
+    url(../assets/fonts/Montserrat-Light.woff2) format(woff2),
+    url(../assets/fonts/Montserrat-light.eot) format(eot),
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Montserrat-SemiBold"),
+    url(../assets/fonts/Montserrat-SemiBold.woff2) format(woff2),
+    url(../assets/fonts/Montserrat-SemiBold.eot) format(eot),
+}
+@font-face {
+    font-family: "Montserrat-ExtraLight";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local("Montserrat-ExtraLight"),
+    url(../assets/fonts/Montserrat-ExtraLight.woff2) format(woff2),
+    url(../assets/fonts/Montserrat-ExtraLight.eot) format(eot),
+}
+
+
+
+
+

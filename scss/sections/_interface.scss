@@ -1,0 +1,198 @@
+.burger-btn {
+    display: none;
+    padding: 5px;
+    width: 50px;
+    height: 40px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        background-color: #666;
+        height: 2px;
+        transition: all 150ms ease;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+        width: 30px;
+        background-color: #666;
+        height: 2px;
+        transition: all 150ms ease;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75%;
+        width: 30px;
+        background-color: #666;
+        height: 2px;
+        transition: all 150ms ease;
+    }
+}
+
+.burger-btn.active {
+    span {
+        opacity: 0;
+    }
+    &::before {
+        transform: rotate(45deg);
+        top: 50%;
+        left: 20%;
+    }
+    &::after {
+        transform: rotate(-45deg);
+        top: 50%;
+        left: 20%;
+    }
+}
+
+
+.header__search {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    form {
+        position: absolute;
+        right: 0;
+        top: 0;
+        input[type=search] {
+            background: transparent url(../assets/img/icons/icon-search.svg) no-repeat 9px center;
+            border: none;
+            padding: 10px;
+            width: 55px;
+            transition: .5s all;
+            outline: none;
+            &:focus {
+                width: 150px;
+                background: #fff;
+                border-color: #000;
+                border-bottom: 2px solid;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .burger-btn {
+        display: block;
+    }
+}
+
+
+
+.slider-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.slider-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.slider-next-button {
+    width: 85px;
+    height: 85px;
+    background-color: #111111b6;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: pointer;
+    span {
+        position: absolute;
+        width: 20px;
+        background-color: #fff;
+        height: 2px;
+        border-radius: 5px;
+        top: 32px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        background-color: #fff;
+        height: 2px;
+        border-radius: 5px;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+    }
+    transition: all 150ms ease;
+    &:hover {
+        background: #000;
+        span {
+            background-color: #1cbbb4;
+        }
+        &::after {
+            background-color: #1cbbb4;
+        }
+    }
+}
+
+.slider-prev-button {
+    width: 85px;
+    height: 85px;
+    background-color: #111111b6;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: pointer;
+    span {
+        position: absolute;
+        width: 20px;
+        background-color: #fff;
+        height: 2px;
+        border-radius: 5px;
+        top: 32px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        background-color: #fff;
+        height: 2px;
+        border-radius: 5px;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    transition: all 150ms ease;
+    &:hover {
+        background: #000;
+        span {
+            background-color: #1cbbb4;
+        }
+        &::after {
+            background-color: #1cbbb4;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .slider-prev {
+        display: none;
+    }
+    .slider-next {
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+.about-us {
+    padding: 50px 10px;
+    &__body {
+        display: flex;
+    }
+
+    &__videobox {
+        flex-basis: 60%;
+        padding-right: 80px;
+    }
+
+    &__textbox {
+        flex-basis: 40%;
+        h2 {
+            font-size: 60px;
+            color: #000;
+            font-weight: 400;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;   
+            margin: 0;
+            display: inline-block;
+            margin-bottom: 10px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                background-image: url(../assets/img/icons/angle.png);
+            }
+        }
+        p {
+            color: #666;
+            line-height: 1.5;
+            font-family: "Montserrat-Regular";
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+            max-width: 450px;
+            margin: 0;
+        }
+    }
+}

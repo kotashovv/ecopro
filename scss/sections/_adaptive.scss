@@ -1,0 +1,170 @@
+@media (max-width:1170px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 250px;
+            }
+        }
+        &__body {
+            padding: 0 10px;
+        }
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 150px;
+            }
+        }
+        &__phone {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .menu {
+        &__link {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .search-btn {
+        .btn-search-icn {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .slide {
+        &__title {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 48px;
+            }
+        }
+        &__subtitle {
+            margin-bottom: 25px;
+            p {
+                font-size: 24px;
+                margin: 0;
+                padding: 0 15px;
+            }
+        }
+    }
+    .about-us {
+        padding: 30px 10px;
+        &__videobox {
+            padding-right: 40px;
+        }
+        &__textbox {
+            h2 {
+                font-size: 42px;
+                &::after {
+                    left: -30px;
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        position: relative;
+        &__menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.603);
+            transition: opacity 300ms ease;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 300ms ease;
+            }
+        }
+        &__phone {
+            display: none;
+        }
+    }
+    .menu {
+        &__list {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 150px;
+            height: 100%;
+            background-color: #fff;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            margin: 0;
+            transition: left 150ms ease;
+            &.active {
+                left: 0;
+            }
+        }
+        &__link {
+            margin: 0;
+            padding: 20px 0;
+            width: 100%;
+            border-bottom: 1px solid #666;
+            text-align: center;
+        }
+    }
+
+    .slide {
+        &__text {
+            padding: 0 10px;
+        }
+        &__title {
+            h1 {
+                font-size: 28px;
+            }
+        }
+        &__subtitle {
+            p {
+                font-size: 18px;
+            }
+        }
+        &__actions {
+            padding-left: 5%;
+        }
+        &__btn-more {
+            font-size: 12px;
+        }
+        &__btn-enter {
+            font-size: 12px;
+        }
+    }
+    .about-us {
+        padding: 10px 0;
+        &__body {
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+        &__videobox {
+            padding: 10px 0 ;
+        }
+        &__textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10px;
+            h2 {
+                text-align: center;
+                font-size: 36px;
+            }
+        }
+    }
+}

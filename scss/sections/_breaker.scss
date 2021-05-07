@@ -1,0 +1,44 @@
+.breaker {
+    background: gray url(/assets/img/background__cars1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__body {
+        padding: 30px 10px 70px;
+    }
+
+    &__text {
+        p {
+            margin: 0;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 2;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width:768px) { 
+    .breaker {
+        &__body {
+            padding: 20px 10px 50px;
+        }
+        &__text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .breaker {
+        &__text {
+            p {
+                line-height: 1.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// Переменные сайта
+@import 'sections/vars';
+
+// обнуление Стилей
+
+@import 'sections/normalize';
+
+// Сетка сайта
+@import 'sections/grids';
+
+// шрифты
+@import 'sections/fonts';
+
+//Интерфейс
+@import 'sections/interface';
+
+//Шапка сайта
+@import 'sections/header';
+
+//Содержимое страницы
+@import 'sections/welcome';
+
+@import 'sections/about-us';
+
+@import 'sections/services';
+
+@import 'sections/cards';
+
+@import 'sections/breaker';
+
+@import 'sections/partners';
+
+@import 'sections/contacts';
+
+@import 'sections/guarantee';
+
+@import 'sections/worktime';
+
+//Подвал сайта
+@import 'sections/footer';
+
+//Адаптив
+@import 'sections/adaptive';
+
+
+

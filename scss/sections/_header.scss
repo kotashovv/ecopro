@@ -1,0 +1,70 @@
+.header {
+    padding: 10px 0;
+    &__body {
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        padding: 0 5px;
+        z-index: 4;
+    }
+
+    &__menu {
+        padding: 0 5px;
+        z-index: 5;
+    }
+
+    &__phone {
+        padding: 0 5px;
+        a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+            transition: color 150ms ease;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &__search {
+        padding: 0 5px;
+        z-index: 10;
+        &.active {
+            .search-btn {
+                .btn-search-color {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+.menu {
+
+    &__list {
+        list-style: none;
+        display: flex;
+        padding-inline-start: 0;
+    }
+
+    &__link {
+        font-family: 'Montserrat-Semibold', 'Times New Roman', Times, serif;
+        padding: 0 7px;
+        a {
+            font-family: inherit;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #666; 
+            transition: color 150ms ease;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+
